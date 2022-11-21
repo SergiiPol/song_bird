@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Courgette', cursive;
+}
+
+.body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left, rgb(115, 240, 244),rgb(221, 211, 34));
+}
+
+.wrapper{
+  display: grid;
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background-image: linear-gradient(to left, rgb(221, 211, 34),rgb(115, 240, 244));
+  border: 5px solid blanchedalmond;
+  user-select: none;
+}
+
+.wrapper_article{
+  display: grid;
+  width: 80%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 12px;
+  background-image: linear-gradient(to left, rgb(152, 152, 156),rgb(146, 162, 162));
+  border: 5px solid blanchedalmond;
+}
+
+.article_h1{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 48px;
+}
+
+.article_h3{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.article_score{
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  font-size: 38px;
+}
+
+.article_span{
+  text-align: center;
+  font-size: 24px;
+  color: rgb(75, 38, 38);
+}
+
+.article_buttons{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button{
+  display: grid;
+  width: 80%;
+  height: 40px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  border-radius: 12px;
+  background-image: linear-gradient(to left, rgb(72, 121, 13), rgb(12, 190, 12));
+  font-size: 24px;
+  cursor: pointer;
+}
+.button_a{
+  text-decoration: none;
+  color: rgb(25, 24, 24);
+}
+
+.button_a:hover{
+  color: bisque;
+}
+
+.button_a:active{
+  color: chartreuse;
+}
+
+@media(max-width: 780px) and (min-width: 340px){
+
+.wrapper{
+  width: 320px;
+}
+
+.article_h1{
+  font-size: 36px;
+}
+
+.article_h3{
+  font-size: 24px;
+}
+
+.article_score{
+  font-size: 38px;
+}
+
+.article_span{
+  font-size: 18px;
+}
+
+.article_buttons{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 15px;
+  gap: 10px;
+}
+
+}

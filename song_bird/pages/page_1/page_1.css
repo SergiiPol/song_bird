@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Courgette', cursive;
+}
+
+.wrapper{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  background-image: linear-gradient(to left, rgb(213, 233, 199), rgb(198, 249, 171));
+  user-select: none;
+} 
+
+.header{
+  display: grid;
+  justify-self: center;
+}
+
+.header_content{
+  display: grid;
+  width: 1160px;
+  height: 120px;
+  justify-self: center;
+  background-image: linear-gradient(to left, rgb(78, 124, 155), rgb(219, 233, 108));
+  z-index: 2;
+}
+
+.header_logo{
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  font-size: 80px;
+  white-space: nowrap;
+}
+
+.header_logo__icon{
+  color:rgb(111, 111, 63);
+}
+
+.header_logo__a{
+  text-decoration: none;
+  color:black;
+}
+
+.main{
+  display: grid;
+  width: 100%;
+  height: 500px;
+  background-image: url(../../assets/images/ptitsy_derevo_art_1920x1080.jpg);
+  background-size: 100% 100%;
+  background-position: 150px 0;
+}
+
+.main_h2{
+  display: grid;
+  width: 380px;
+  height: 125px;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-left: 50px;
+  color: beige;
+  white-space: nowrap;
+}
+
+.main_button-start{
+  display: grid;
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  margin-left: 100px;
+  margin-top: 280px;
+  align-content: center;
+  align-self: flex-start;
+  justify-content: center;
+  font-size: 28px;
+  border-radius: 12px;
+  border: 6px solid beige;
+  background-image: linear-gradient(to left, rgb(219, 233, 108), rgb(78, 124, 155));
+  cursor: pointer;
+}
+
+.main_button-start__a{
+  text-decoration: none;
+}
+
+.main_button-start:hover{
+  color: beige;
+  font-size: 32px;
+  background-image: linear-gradient(to left, rgb(78, 124, 155), rgb(219, 233, 108));
+}
+
+.main_button-start:active{
+  border: 6px solid greenyellow;
+}
+
+.main_button-start__a:active{
+  color: greenyellow;
+}
+
+.footer{
+  display: grid;
+  width: 100%;
+}
+
+.footer_nav{
+  display: grid;
+  width: 1160px;
+  height: 100px;
+  justify-self: center;
+  background-image: linear-gradient(to left, rgb(219, 233, 108), rgb(78, 124, 155));
+}
+
+.footer_nav__ul{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_nav__ul__icon{
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  font-size: 42px;
+}
+
+.footer_nav__ul__icon__a:hover{
+  font-size: 47px;
+  color: beige;
+}
+
+.footer_nav__ul__icon__a:active{
+  color: greenyellow; 
+}
+
+.footer_nav__ul__school{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer_nav__ul__school-name{
+  display: grid;
+  width: 70%;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer_nav__ul__school-name__img{
+  display: grid;
+  width: 90%;
+  height: 90%;
+}
+
+.footer_nav__ul__school-name:hover{
+  color: beige;
+}
+
+/*.footer_nav__ul__person-name{
+  display: grid;
+  margin-top: 10px;
+  font-size: 28px;
+  color: rgb(78, 124, 155);
+}
+*/
+@media(max-width: 1178px) and (min-width: 659px){
+  
+.header_content{
+  width: 640px;
+}
+
+.main{
+  width: 640px;
+  height: 400px;
+}
+
+.main_h2{
+  margin-top: 80px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.main_button-start{
+  margin-top: 280px;
+  margin-left: 70px;
+}
+
+.footer_nav{
+  width: 640px;
+}
+
+.footer_nav__ul__icon{
+  font-size: 32px;
+}
+
+.footer_nav__ul__school-name{
+  font-size: 32px;
+}
+
+.footer_nav__ul__person-name{
+  font-size: 20px;
+}
+
+}
+
+@media(max-width: 658px) and (min-width: 320px){
+
+.header_content{
+  width: 340px;
+  height: 80px;
+}
+
+.header_logo{
+  font-size: 40px;
+}
+
+.main{
+  width: 340px;
+  height: 300px;
+  background-position: 0px 0;
+
+}
+
+.main_h2{
+  display: none;
+}
+
+.main_button-start{
+  width: 100px;
+  height: 40px;
+  margin-top: 240px;
+  margin-left: 120px;
+  font-size: 18px;
+  border: 2px solid beige;
+}
+
+.main_button-start:hover{
+  font-size: 22px;
+}
+
+.footer_nav{
+  width: 340px;
+  height: 80px;
+}
+
+.footer_nav__ul{
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.footer_nav__ul__icon{
+  font-size: 18px;
+}
+
+.footer_nav__ul__icon__a:hover{
+  font-size: 21px;
+  color: beige;
+}
+
+.footer_nav__ul__icon__a:active{
+  color: greenyellow; 
+}
+
+.footer_nav__ul__school{
+  margin-right: 8px;
+}
+
+.footer_nav__ul__school-name{
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+.footer_nav__ul__person-name{
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+}

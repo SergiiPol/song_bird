@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7af22f3d21.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="page_2.css">
+  <title>SongBird Quiz</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-first">
+        <h1 class="header-first__logo"><a class="header-first__logo__a" href="../page_1/page_1.html">Song<i class="fa-solid fa-feather-pointed header_logo__icon"></i>Bird</a></h1>
+        <div class="header-first__score">
+          <div class="header-first__score__score">Score:</div>
+          <div class="header-first__score__num">0</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav_header-second" value="9">
+          <li class="nav_header-second__li active" value="1">Разминка</li>
+          <li class="nav_header-second__li" value="2">Воробьиные</li>
+          <li class="nav_header-second__li" value="3">Лесные птицы</li>
+          <li class="nav_header-second__li" value="4">Певчие птицы</li>
+          <li class="nav_header-second__li" value="5">Хищные птицы</li>
+          <li class="nav_header-second__li" value="6">Морские птицы</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="task">
+      <div class="task_img">
+        <img class="task_img__img" src="../../assets/icons/crow_icon.svg" alt="bird">
+      </div>
+      <div class="task_task-block">
+        <div class="task_task-block__name">******</div>
+        <audio class="task_task-block__audio" controls="controls" id="audio_player">
+          <source src="#" type="audio/ogg" />
+        </audio>
+      </div>
+    </section>
+    <section class="answer">
+      <article class="possible-answer">
+        <div class="lock"><img class="lock_img" src="../../assets/icons/win.svg" alt=""></div>
+        <ul class="possible-answer_ul">
+        </ul>
+      </article>
+      <article class="correct-answer">
+        <h3 class="correct-answer_h3">Выберите категорию.<br>
+                                      Прослушайте плеер<br>
+                                      Выберите птицу из списка.
+        </h3>
+      </article>
+    </section>
+    <section class="next-level">
+      <button class="next-level_button" disabled><a class="next-level_button__a" href="../page_3/page_3.html">Следующий вопрос</a></button>
+    </section>
+  </div>
+  <script src="page_2.js"></script>    
+</body>
+</html>
